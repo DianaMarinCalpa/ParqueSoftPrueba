@@ -1,0 +1,84 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.125rem;
+    color: #718096;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #ebf4ff;
+    margin-bottom: 1rem;
+}
+
+.icon-svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #667eea;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #1a202c;
+}
+
+.card p {
+    color: #718096;
+    font-size: 1rem;
+}

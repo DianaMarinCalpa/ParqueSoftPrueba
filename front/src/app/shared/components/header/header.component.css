@@ -1,0 +1,86 @@
+.navbar {
+  color: var(--primary-color);
+  padding: 1rem;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  display: block;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.5rem 10px;
+  transition: background 0.3s;
+}
+
+.navbar-item:hover {
+  background-color: var(--accent-color);
+  border-radius: 20px;
+}
+
+.navbar-cta {
+  background-color: var(--primary-color);
+  color:white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar-cta:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
+

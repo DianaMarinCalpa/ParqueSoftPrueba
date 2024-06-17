@@ -1,0 +1,13 @@
+<nav class="navbar">
+  <div class="container">
+
+    <a [routerLink]="['/']" class="navbar-brand">
+      <img src="/assets/logo.png" alt="Logo Web Bank" class="navbar-logo" />
+      <span class="navbar-company-name">Web Bank</span>
+    </a>
+      <div class="navbar-menu" [class.active]="navbarOpen" id="navbarMenu">
+          <a href="#" class="navbar-item">Registro</a>
+          <a href="#" class="navbar-item navbar-cta">Ingreso</a>
+      </div>
+  </div>
+</nav>

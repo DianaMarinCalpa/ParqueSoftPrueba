@@ -1,0 +1,21 @@
+<app-container>
+    <app-title
+      [title]="'Mis cuentas'"
+      [description]="
+        '¡Bienvenidos a web Bank!
+        En esta plataforma, le ofrecemos una visión detallada y ordenada de todas sus cuentas bancarias. Nuestro objetivo es proporcionarle una experiencia intuitiva y eficiente para gestionar sus finanzas personales.
+        
+        Aquí podrá encontrar información actualizada sobre sus cuentas, incluyendo los saldos disponibles y las transacciones recientes. Los datos se presentan de manera clara y ordenada, permitiéndole tomar decisiones informadas con facilidad.'
+      "
+    ></app-title>
+     <app-grid>
+      @for (card of datosDelBackend; track card.id) {
+          <app-card 
+          [id]='card.id'
+          [accountType]='card.tipoCuenta'
+          [cardNumber]='card.valorDisponible'
+          ></app-card>
+      }
+    </app-grid>
+
+</app-container>

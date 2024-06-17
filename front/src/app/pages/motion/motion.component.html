@@ -1,0 +1,16 @@
+<app-container>
+<app-title
+[title]="'Detalle de movimiento de mis cuentas'"
+[description]="
+  'Aquí podrá encontrar información actualizada sobre sus cuentas, incluyendo los saldos disponibles y las transacciones recientes. Los datos se presentan de manera clara y ordenada, permitiéndole tomar decisiones informadas con facilidad.'
+"
+></app-title>
+<ul>
+    @for (motion of datosDelBackend; track motion.id) {
+        <li>{{motion.id}} 
+        <p>{{motion.fechaTransacccion}} </p>
+        <p>{{motion.montoTransaccion}} </p>
+        <p>{{motion.descripcion}} </p>
+        </li>
+    }
+</ul></app-container>
